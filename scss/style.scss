@@ -86,6 +86,7 @@ footer{
 @media(min-width: 768px){
     header{
         height: 110px;
+        text-align: center;
         .ing-index{
             font-size: 20px;
         }
@@ -100,9 +101,10 @@ footer{
             gap: 20px;
             padding-top: 18px;
             padding-right: 15px;
-            font-size: 17px;
+            font-size: 32px;
         }
     }
+
 
     main{
         h1{
@@ -125,9 +127,27 @@ footer{
                 font-size: 20px;
             }
         }
-    }
+        .card-ropa{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 50px;
+        }
+        .container-cm{
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            text-align: center;
+            }
+            .nuestra-historia{
+                width: 50%;
+            }
+        }
+        .sec-ubi iframe{
+            height: 875px;
+            width: 400px;
+        }
     footer{
         font-size: 25px;
         gap: 110px;
-    }
+        }
 }
