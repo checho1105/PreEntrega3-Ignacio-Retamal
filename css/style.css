@@ -80,4 +80,50 @@ footer {
   padding: 10px;
 }
 
+@media (min-width: 768px) {
+  header {
+    height: 110px;
+  }
+  header .ing-index {
+    font-size: 20px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 18px;
+    padding-right: 15px;
+    font-size: 17px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main .p-index {
+    display: flex;
+  }
+  main .img-index {
+    text-align: center;
+    margin: 60px;
+  }
+  main .button-main {
+    padding: 50px;
+  }
+  main .button-main a {
+    padding: 25px;
+    font-size: 20px;
+  }
+  footer {
+    font-size: 25px;
+    gap: 110px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
