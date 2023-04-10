@@ -44,10 +44,41 @@ header{
     }
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    h1{
+        text-align: center;
+        margin: 20px;
+    }
+    .p-index{
+        display: none;
+    }
+    .button-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color: grey;
+        }
+    }
+    .container-cm{
+        text-align: center;
+    }
+}
+
 footer{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     background-color: rgba(0, 128, 0, 0.514);
     font-family: 'Roboto', sans-serif;
+    height: 50px;
+    padding: 10px;
 }
