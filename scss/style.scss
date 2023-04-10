@@ -35,6 +35,7 @@ header{
         padding: 7px;
         color: black;
         text-decoration: none;
+        font-size: 20px;
     }
     a:hover{
         color: grey;
@@ -73,7 +74,18 @@ main{
         }
     }
     .container-cm{
+        display: flex;
+        flex-direction: column;
         text-align: center;
+    }
+    .icm{
+        width: 300px;
+    }
+    .sec-ubi{
+        width: 319px;
+    }
+    .pcm{
+        display: none;
     }
 }
 
@@ -91,6 +103,7 @@ footer{
     header{
         height: 110px;
         text-align: center;
+        gap: 70px;
         .ing-index{
             font-size: 20px;
         }
@@ -103,9 +116,14 @@ footer{
             display: flex;
             flex-direction: row;
             gap: 20px;
-            padding-top: 18px;
+            padding-top: 15px;
             padding-right: 15px;
             font-size: 32px;
+            margin-bottom: 15px;
+        }
+        a{
+            padding: 12px;
+            margin-top: 5px;
         }
     }
 
@@ -150,8 +168,73 @@ footer{
             height: 875px;
             width: 400px;
         }
+        .pcm{
+            display: none;
+        }
     footer{
         font-size: 25px;
         gap: 110px;
         }
 }
+@media(min-width: 1024px){
+    header{
+        height: 110px;
+        gap: 80px;
+        .ing-index{
+            font-size: 30px;
+        }
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding-top: 18px;
+            padding-right: 15px;
+            font-size: 40px;
+        }
+    }
+    main{
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .p-index{
+            display: flex;
+        }
+        .img-index{
+            text-align: center;
+            margin: 60px;
+        }
+        .button-main{
+            padding: 50px;
+            a{
+                padding: 25px;
+                font-size: 20px;
+            }
+        }
+        .card-ropa{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-left: 50px;
+        }
+        .container-cm{
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            text-align: center;
+            }
+            .nuestra-historia{
+                width: 50%;
+            }
+        }
+        .sec-ubi iframe{
+            height: 875px;
+            width: 400px;
+        }
+    }

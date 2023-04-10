@@ -33,6 +33,7 @@ header {
   padding: 7px;
   color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 .navbar a:hover {
   color: grey;
@@ -71,7 +72,18 @@ main .button-main a:hover {
   color: grey;
 }
 main .container-cm {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+main .icm {
+  width: 300px;
+}
+main .sec-ubi {
+  width: 319px;
+}
+main .pcm {
+  display: none;
 }
 
 footer {
@@ -88,6 +100,7 @@ footer {
   header {
     height: 110px;
     text-align: center;
+    gap: 70px;
   }
   header .ing-index {
     font-size: 20px;
@@ -101,9 +114,14 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding-top: 18px;
+    padding-top: 15px;
     padding-right: 15px;
     font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .navbar a {
+    padding: 12px;
+    margin-top: 5px;
   }
   main h1 {
     font-size: 40px;
@@ -143,9 +161,72 @@ footer {
     height: 875px;
     width: 400px;
   }
+  .pcm {
+    display: none;
+  }
   footer {
     font-size: 25px;
     gap: 110px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    height: 110px;
+    gap: 80px;
+  }
+  header .ing-index {
+    font-size: 30px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 18px;
+    padding-right: 15px;
+    font-size: 40px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main .p-index {
+    display: flex;
+  }
+  main .img-index {
+    text-align: center;
+    margin: 60px;
+  }
+  main .button-main {
+    padding: 50px;
+  }
+  main .button-main a {
+    padding: 25px;
+    font-size: 20px;
+  }
+  main .card-ropa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 50px;
+  }
+  main .container-cm {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-align: center;
+  }
+  main .nuestra-historia {
+    width: 50%;
+  }
+  .sec-ubi iframe {
+    height: 875px;
+    width: 400px;
   }
 }
 
